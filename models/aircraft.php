@@ -1,5 +1,5 @@
 <?php 
-
+//eimai to allo sxolio
 function insertaircraft( $regno, $aircarrier, $con_date, $modelcode ) {
     $success = mysql_query ("
         INSERT INTO aircraft (
