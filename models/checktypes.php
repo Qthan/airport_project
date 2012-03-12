@@ -5,7 +5,7 @@ function insertchecktypes( $check_name, $max_score ) {
         INSERT INTO checktypes (
             checktypeid,
             check_name,
-            max_score
+            maxscore
         )
         VALUES (
             NULL,
@@ -13,6 +13,7 @@ function insertchecktypes( $check_name, $max_score ) {
             '$max_score'
         )"
     );
+    if ( !$success ) die ('query fail'.mysql_error());
     return $success;
 }
 

@@ -1,8 +1,8 @@
 <?php
 
-function insertcontroller( $ssn, $check_date, $check_result ) {
+function insertcontrollers( $ssn, $check_date, $check_result ) {
     $success = mysql_query ("
-        INSERT INTO controller (
+        INSERT INTO controllers (
             ssn,
             check_date,
             check_result
@@ -13,21 +13,22 @@ function insertcontroller( $ssn, $check_date, $check_result ) {
             '$check_result'
         )"
     );
+    if ( !$success ) die ('query fail'.mysql_error());
     return $success;
 }
 
-function deletecontroller ( $ssn) {
+function deletecontrollers ( $ssn) {
     $success = mysql_query (
-        "DELETE FROM controller
+        "DELETE FROM controllers
         WHERE ssn = '$ssn'"
     );
 
     return $success;
 }
 
-function updatecontroller ( $ssn, $changing, $value ) {
+function updatecontrollers ( $ssn, $changing, $value ) {
     $success = mysql_query ("
-        UPDATE controller
+        UPDATE controllers
         SET ". "$changing"." = '$value'
         WHERE ssn = '$ssn'"
     );
@@ -39,8 +40,8 @@ function updatecontroller ( $ssn, $changing, $value ) {
 function listcont () {
     $res = mysql_query ("
         SELECT a.*, m.*
-        FROM controller a 
-        INNER JOIN employee m 
+        FROM controllers a 
+        INNER JOIN employees m 
         ON a.ssn = m.ssn"
     );
     if ( !$res ) {

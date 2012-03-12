@@ -64,7 +64,7 @@
     mysql_query( $sql, $con );    
 
     $sql = "CREATE TABLE checktypes (
-    checktypeid int NOT NULL PRIMARY KEY,
+    checktypeid int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     check_name varchar ( 15 ) NOT NULL,
     maxscore int NOT NULL
     ) ENGINE=INNODB";

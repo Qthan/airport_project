@@ -1,8 +1,8 @@
 <?php
 
-function inserttechnician( $ssn, $rank ) {
+function inserttechnicians( $ssn, $rank ) {
     $success = mysql_query ("
-        INSERT INTO technician (
+        INSERT INTO technicians (
             ssn,
             rank
         )
@@ -14,18 +14,18 @@ function inserttechnician( $ssn, $rank ) {
     return $success;
 }
 
-function deletetechnician ( $ssn) {
+function deletetechnicians ( $ssn) {
     $success = mysql_query (
-        "DELETE FROM technician
+        "DELETE FROM technicians
         WHERE ssn = '$ssn'"
     );
 
     return $success;
 }
 
-function updatetechnician ( $ssn, $changing, $value ) {
+function updatetechnicians ( $ssn, $changing, $value ) {
     $success = mysql_query ("
-        UPDATE technician
+        UPDATE technicians
         SET ". "$changing"." = '$value'
         WHERE ssn = '$ssn'"
     );
@@ -37,7 +37,7 @@ function updatetechnician ( $ssn, $changing, $value ) {
 function listtech () {
     $res = mysql_query ("
         SELECT a.*, m.*
-        FROM technician a 
+        FROM technicians a 
         INNER JOIN employee m 
         ON a.ssn = m.ssn"
     );

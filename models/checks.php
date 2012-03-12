@@ -3,7 +3,7 @@
 function insertchecks( $reg_num, $checktypeid, $ssn, $duration, $score ) {
     $success = mysql_query ("
         INSERT INTO checks (
-            NULL,
+            checkid,
             reg_num,
             checktypeid,
             ssn,
@@ -11,6 +11,7 @@ function insertchecks( $reg_num, $checktypeid, $ssn, $duration, $score ) {
             score
         )
         VALUES (
+            NULL,
             '$reg_num',
             '$checktypeid',
             '$ssn',
@@ -18,6 +19,7 @@ function insertchecks( $reg_num, $checktypeid, $ssn, $duration, $score ) {
             '$score'
         )"
     );
+    if ( !$success ) die ('query fail'.mysql_error());
     return $success;
 }
 
@@ -28,6 +30,7 @@ function deletechecks ( $checkid) {
         WHERE checkid = '$checkid'"
     );
 
+    if ( !$success ) die ('query fail'.mysql_error());
     return $success;
 }
 
