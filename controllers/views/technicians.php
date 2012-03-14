@@ -27,7 +27,7 @@ foreach( $technicians as $technician ) {
         <td> <?php echo $technician[9]; ?></td>
         <td> <?php echo $technician[1]; ?></td>
         <td> 
-            <form action = "delete_technician.php" method = "post">
+            <form action = "delete_technicians.php" method = "post">
                 <input name = "delssn" type = "hidden" value = "<?php echo $technician[0]; ?>">
                 <input type = "submit" value = "delete">
             </form>
@@ -43,7 +43,7 @@ foreach( $technicians as $technician ) {
 </table>
 
 <p>
-    <a href = 'insert_technician.php'>add technician</a> 
+    <a href = 'insert_technicians.php'>add technician</a> 
 </p>
 
     

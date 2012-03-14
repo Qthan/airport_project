@@ -27,13 +27,13 @@ foreach( $employees as $employee ) {
         <td> <?php echo $employee[6]; ?></td>
         <td> <?php echo $employee[7]; ?></td>
         <td> 
-            <form action = "delete_employee.php" method = "post">
+            <form action = "delete_employees.php" method = "post">
                 <input name = "delssn" type = "hidden" value = "<?php echo $employee[0]; ?>">
                 <input type = "submit" value = "delete">
             </form>
         </td>
         <td> 
-            <form action = "update_employee.php" method = "post">
+            <form action = "update_employees.php" method = "post">
                 <input name = "updssn" type = "hidden" value = "<?php echo $employee[0]; ?>">
                 <input type = "submit" value = "update">
             </form>

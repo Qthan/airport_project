@@ -37,6 +37,24 @@ function updatecontrollers ( $ssn, $changing, $value ) {
     return $success;
 }
 
+function getcontrollers( $ssn ) {
+    $res = mysql_query("
+        SELECT a.*, b.*
+        FROM employees a
+        INNER JOIN controllers b
+        ON a.ssn = b.ssn
+        WHERE a.ssn = '$ssn'
+        LIMIT 1;            
+        ");
+    if ( mysql_num_rows ( $res ) == 1 ) {
+        $check = mysql_fetch_array( $res );
+        return $check;
+    }
+    else {
+        return false;
+    }
+}
+
 function listcont () {
     $res = mysql_query ("
         SELECT a.*, m.*
