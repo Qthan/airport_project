@@ -13,7 +13,7 @@ function insertcontrollers( $ssn, $check_date, $check_result ) {
             '$check_result'
         )"
     );
-//    if ( !$success ) die ('query fail'.mysql_error());
+    if ( !$success ) die ('query fail'.mysql_error());
     return $success;
 }
 
@@ -56,4 +56,3 @@ function listcont () {
     return $rows;
 }
 ?>
-
