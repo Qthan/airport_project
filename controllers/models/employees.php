@@ -23,7 +23,7 @@ function insertemployees( $ssn, $umn, $fname, $surname, $address, $phone, $yob, 
             '$salary'
         )"
     );
-    if ( !$success ) die ('query fail'.mysql_error());
+//    if ( !$success ) die ('query fail'.mysql_error());
     return $success;
 }
 
