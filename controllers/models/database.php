@@ -1,5 +1,5 @@
 <?php
-    $con = mysql_connect( 'localhost', 'root', 'vlc55555' );
+    $con = mysql_connect( 'localhost', 'root', 'lilalo5' );
     if (!$con){
                 die('Could not connect: ' . mysql_error());
                     }
