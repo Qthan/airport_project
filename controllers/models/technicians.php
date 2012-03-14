@@ -38,7 +38,7 @@ function listtech () {
     $res = mysql_query ("
         SELECT a.*, m.*
         FROM technicians a 
-        INNER JOIN employee m 
+        INNER JOIN employees m 
         ON a.ssn = m.ssn"
     );
     if ( !$res ) {
