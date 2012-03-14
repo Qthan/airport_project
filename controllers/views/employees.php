@@ -1,12 +1,8 @@
 <?php include 'header.php';
 ?>
 <p>
-<<<<<<< HEAD
-    <a href = 'aircraft_model.php'>view models</a>
-=======
     <a href = 'controllers.php'>view controllers</a>
     <a href = 'technicians.php'>view technicians</a>
->>>>>>> 5251009486906f34604a5e9208576b75f7e26d78
 </p>
 <table>
     <tr>
