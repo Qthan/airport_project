@@ -11,7 +11,11 @@ function inserttechnicians( $ssn, $rank ) {
             '$rank'
         )"
     );
-    return $success;
+     if ( !$success ) {
+        die ('query fail' . mysql_error());
+    }
+
+   return $success;
 }
 
 function deletetechnicians ( $ssn) {
@@ -31,7 +35,7 @@ function updatetechnicians ( $ssn, $changing, $value ) {
     );
 
     if ( !$success ) die ('query fail'.mysql_error());
-    return $success;
+  	  return $success;
 }
 
 function listtech () {
@@ -53,4 +57,3 @@ function listtech () {
     return $rows;
 }
 ?>
-
