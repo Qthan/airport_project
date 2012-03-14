@@ -44,6 +44,11 @@
          <tr rel="contr">
             <td> Last Examination Date </td> <td> <input type="text" name ="exdate" value ="notset"> </td>
             <td> Result </td> <td> <input type="text" name ="exres" value="notset"> </td>
+            <td> Rank </td> <td> <input type="text" name ="rank" > </td>
+        </tr>
+         <tr rel="contr">
+            <td> Last Examination Date </td> <td> <input type="text" name ="exdate"> </td>
+            <td> Result </td> <td> <input type="text" name ="exres" > </td>
         </tr>
         <tr>
             <td> <input type = "submit" name = "submit" value = "submit"> </td>
