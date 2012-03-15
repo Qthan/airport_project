@@ -27,6 +27,22 @@ function insertemployees( $ssn, $umn, $fname, $surname, $address, $phone, $yob, 
     return $success;
 }
 
+function getemployees( $ssn ) {
+    $res = mysql_query("
+        SELECT *
+        FROM employees 
+        WHERE ssn = '$ssn'
+        LIMIT 1;            
+        ");
+        
+    if ( mysql_num_rows ( $res ) == 1 ) {
+        $check = mysql_fetch_array( $res );
+        return $check;
+    }
+    else {
+        return false;
+    }
+}
 
 function deleteemployees ( $ssn) {
     $success = mysql_query (
