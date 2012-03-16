@@ -80,7 +80,7 @@
     score int NOT NULL,
     FOREIGN KEY ( reg_num ) REFERENCES aircraft ( reg_num ) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY ( checktypeid ) REFERENCES checktypes ( checktypeid ) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY ( ssn ) REFERENCES employees ( ssn ) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY ( ssn ) REFERENCES technicians ( ssn ) ON DELETE CASCADE ON UPDATE CASCADE,
 	CHECK (score < ( SELECT maxscore FROM checktypes c WHERE checktypeid = c.checktypeid ))
    ) ENGINE=INNODB";
     

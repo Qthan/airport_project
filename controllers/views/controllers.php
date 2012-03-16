@@ -33,7 +33,7 @@ foreach( $controllers as $controller ) {
             </form>
         </td>
         <td> 
-            <form action = "update_controller.php" method = "post">
+            <form action = "update_employees.php" method = "post">
                 <input name = "updssn" type = "hidden" value = "<?php echo $controller[3]; ?>">
                 <input type = "submit" value = "update">
             </form>

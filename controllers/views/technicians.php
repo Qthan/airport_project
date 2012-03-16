@@ -33,7 +33,7 @@ foreach( $technicians as $technician ) {
             </form>
         </td>
         <td> 
-            <form action = "update_technician.php" method = "post">
+            <form action = "update_employees.php" method = "post">
                 <input name = "updssn" type = "hidden" value = "<?php echo $technician[0]; ?>">
                 <input type = "submit" value = "update">
             </form>

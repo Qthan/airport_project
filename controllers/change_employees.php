@@ -52,8 +52,8 @@
             
             else {
                 
-                upatetecontrollers( $_POST[ 'ssn' ], 'chech_date' , $_POST[  'exdate' ] );
-                upatetecontrollers( $_POST[ 'ssn' ], 'chech_res' , $_POST[  'exdate' ] );
+                updatecontrollers( $_POST[ 'ssn' ], 'check_date' , $_POST[  'exdate' ] );
+                updatecontrollers( $_POST[ 'ssn' ], 'check_result' , $_POST[  'exdate' ] );
             
             }
         }

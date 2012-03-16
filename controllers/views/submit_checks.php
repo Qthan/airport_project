@@ -3,13 +3,46 @@
 <form action = "submit_checks.php" method = "post">
     <table>
         <tr> 
-            <td> Registration Number </td> <td > <input type = "text" name = "regnum"> </td>
+        <td> Registration Number </td> 
+            <td>    
+                <select name ="regnum">
+                    <?php 
+                    foreach ( $aircrafts as $aircraft ) {
+                    ?>                
+                    <option ><?php echo $aircraft[ 0 ]; ?> </option>
+                    <?php 
+                    } 
+                    ?>
+                </select>
+            </td>
         </tr>
         <tr> 
-            <td> Checktype ID </td> <td > <input type = "text" name = "checktypeid"> </td>
+        <td> Checktype ID </td> 
+            <td>    
+                <select name ="checktypeid">
+                    <?php 
+                    foreach ( $checktypes as $checktype ) {
+                    ?>                
+                    <option ><?php echo $checktype[ 0 ]; ?> </option>
+                    <?php 
+                    } 
+                    ?>
+                </select>
+            </td>
         </tr>
         <tr> 
-            <td> SSN </td> <td > <input type = "text" name = "ssn"> </td>
+            <td> SSN </td> 
+            <td>    
+                <select name ="ssn">
+                    <?php 
+                    foreach ( $technicians as $technician ) {
+                    ?>                
+                    <option ><?php echo $technician[ 0 ]; ?> </option>
+                    <?php 
+                    } 
+                    ?>
+                </select>
+            </td>
         </tr>
         <tr> 
             <td> Duration </td> <td > <input type = "text" name = "duration"> </td>

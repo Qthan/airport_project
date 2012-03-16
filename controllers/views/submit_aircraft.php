@@ -12,7 +12,19 @@
             <td> Construction Date </td> <td > <input type = "text" name = "condate"> </td>
         </tr>
         <tr> 
-            <td> Model Code </td> <td > <input type = "text" name = "mcode"> </td>
+        <td> Model Code </td>
+        <td>    
+            <select name ="mcode">
+                <?php 
+                foreach ( $models as $model ) {
+                ?>                
+                <option ><?php echo $model[ 0 ]; ?> </option>
+                <?php 
+                } 
+                ?>
+
+            </select>
+        </td>
         </tr>
         <tr>
             <td> <input type = "submit" name = "submit" value = "submit"> </td>
