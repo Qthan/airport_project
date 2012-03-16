@@ -39,7 +39,7 @@
             </td>
         </tr>
         <tr rel="tech">
-            <td> Rank </td> <td> <input type="text" name ="rank" value ="notset" > </td>
+            <td> Rank </td> <td> <input type="text" name ="rank" > </td>
         </tr>
          <tr rel="contr">
             <td> Last Examination Date </td> <td> <input type="text" name ="exdate"> </td>
