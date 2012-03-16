@@ -46,6 +46,18 @@ foreach( $employees as $employee ) {
     <a href = 'insert_employee.php'>add employee</a> 
 </p>
 
+<div>
+    <p> Budget </p>    
+    <table>
+        <tr> 
+            <th> Average Salary </th> <td> <?php echo $avg; ?> </td>
+        </tr>
+        <tr> 
+            <th> Total Salary </th> <td> <?php echo $sum; ?> </td>
+        </tr>
+    </table>
+</div>
+
     
 <?php  include 'footer.php';
 ?>

@@ -31,7 +31,7 @@
             
             else {
                 
-                upatetechnicians( $_POST[ 'ssn' ], 'rank' , $_POST[ 'rank' ] );
+                updatetechnicians( $_POST[ 'ssn' ], 'rank' , $_POST[ 'rank' ] );
             
             }
         }

@@ -23,7 +23,7 @@ function insertemployees( $ssn, $umn, $fname, $surname, $address, $phone, $yob, 
             '$salary'
         )"
     );
-//    if ( !$success ) die ('query fail'.mysql_error());
+    if ( !$success ) die ('query fail'.mysql_error());
     return $success;
 }
 
@@ -83,4 +83,30 @@ function listemployees () {
     return $rows;
 }
  
+function sumsalary () {
+
+    $res = mysql_query("
+        SELECT SUM(salary)
+        FROM employees"
+    );
+
+    if ( !$res ) {
+        die ('query fail' . mysql_error());
+    }
+
+    $rvalue[0] = mysql_result( $res, 0 );
+
+    $res = mysql_query("
+        SELECT count(*)
+        FROM employees"
+    );
+
+    if ( !$res ) {
+        die ('query fail' . mysql_error());
+    }
+
+    $rvalue[ 1 ] = mysql_result( $res, 0 );
+    return $rvalue;
+}
+
 ?>

@@ -43,6 +43,7 @@ else {
             <td> Specialization: </td>
             <?php
             if ( $gett == $get ) { 
+                $rank = $get[ 9 ];
             ?>
             <td>
                 <select name="spec">
@@ -55,6 +56,8 @@ else {
             <?php 
                 }
             else if ( $getc == $get ) { 
+                $date = $get[ 9 ];
+                $result = $get [ 10 ];
             ?>
             <td>
                 <select name="spec">
@@ -81,11 +84,11 @@ else {
             ?>
         </tr>
         <tr rel="tech">
-            <td> Rank </td> <td> <input type="text" name ="rank" value ="<?php echo $get[ 9 ];?> " > </td>
+            <td> Rank </td> <td> <input type="text" name  ="rank" value ="<?php echo $rank;?> " > </td>
         </tr>
          <tr rel="contr">
-            <td> Last Examination Date </td> <td> <input type="text" name ="exdate" value ="<?php echo $get[ 9 ];?> "> </td>
-            <td> Result </td> <td> <input type="text" name ="exres" value ="<?php echo $get[ 10 ];?> " > </td>
+            <td> Last Examination Date </td> <td> <input type="text" name ="exdate" value ="<?php echo $date;?> "> </td>
+            <td> Result </td> <td> <input type="text" name ="exres" value ="<?php echo $result;?> " > </td>
         </tr>
         <tr>
             <td> <input type = "submit" name = "submit" value = "submit"> </td>
