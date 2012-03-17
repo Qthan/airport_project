@@ -3,7 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="el" lang="el"> 
     <head>
         <title>My Base</title>
-        <link type="text/css" rel="stylesheet" href="style.css" />
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="js/usableform.js"></script>
     </head>
     <body>
          <div class="users">

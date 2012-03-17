@@ -1,6 +1,5 @@
 <?php include 'header.php';
 ?>
-<script type="text/javascript" src="usableform.js"></script>
 
 <form action = "submit_employee.php" method = "post">
     <table>

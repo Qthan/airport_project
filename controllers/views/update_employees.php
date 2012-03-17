@@ -11,8 +11,6 @@ else {
 }
 ?>
 
-<script type="text/javascript" src="usableform.js"></script>
-
 <form action = "change_employees.php" method = "post">
     <table>
         <tr> 
