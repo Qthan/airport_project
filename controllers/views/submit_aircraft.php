@@ -9,7 +9,7 @@
             <td> Air Carrier </td> <td > <input type = "text" name = "carrier"> </td>
         </tr>
         <tr> 
-            <td> Construction Date </td> <td > <input type = "text" name = "condate"> </td>
+            <td> Construction Date </td> <td > <input type = "text" name = "condate" id="datepicker"> </td>
         </tr>
         <tr> 
         <td> Model Name </td>

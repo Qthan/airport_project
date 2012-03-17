@@ -3,7 +3,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="el" lang="el"> 
     <head>
         <title>My Base</title>
+        <link rel="stylesheet" href="css/jquery-ui-1.8.18.custom.css">
         <link type="text/css" rel="stylesheet" href="css/style.css" />
+	
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$( "#datepicker" ).datepicker({
+					dateFormat:'yy-mm-dd',
+					changeMonth: true,
+					changeYear: true
+					});
+			});
+		</script>
         <script type="text/javascript" src="js/usableform.js"></script>
     </head>
     <body>
