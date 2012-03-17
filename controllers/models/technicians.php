@@ -58,10 +58,14 @@ function gettechnicians( $ssn ) {
 
 function listtech () {
     $res = mysql_query ("
-        SELECT a.*, m.*
-        FROM technicians a 
-        INNER JOIN employees m 
-        ON a.ssn = m.ssn"
+        SELECT e.*, t.*, x.*, a.*
+        FROM employees e
+        INNER JOIN technicians t 
+        ON e.ssn = t.ssn
+        LEFT JOIN expertises x
+        ON x.ssn = t.ssn
+        LEFT JOIN aircraft_model a
+        ON a.model_code = x.model_code"
     );
     if ( !$res ) {
         die ('query fail' . mysql_error());

@@ -32,9 +32,9 @@
             <td> Occupation </td>
             <td>
                 <select name="spec">
-                    <option value="none" rel="none" selected="selected" >Without Specialazation </option>
-                    <option value="tech" rel="tech" > Technician </option> 
-                    <option value="contr" rel="contr" >Air Traffic Controler </option>
+                <option value="none" rel="none" <?php if ( $add==='none' ){?> selected="selected" <?php } ?> >Without Specialazation</option>
+                    <option value="tech" rel="tech" <?php if ( $add==='tech' ){?> selected="selected" <?php } ?> >Technician</option> 
+                    <option value="contr" rel="contr" <?php if ( $add==='contr' ){?> selected="selected" <?php } ?>  >Air Traffic Controler </option>
                 </select>
             </td>
         </tr>
@@ -42,13 +42,13 @@
             <td> Rank </td> <td> <input type="text" name ="rank" > </td>
         </tr>
         <tr rel="tech"> 
-            <td> Specialization </td> <?php//<td> <input type="text" name ="rank" > </td>?>
+            <td> Specialization </td>
             <td>
                 <select name ="mname">
                     <?php 
                     foreach ( $models as $model ) {
                     ?>                
-                    <option value="<?php echo $model[ 0 ] ?>" ><?php echo $model[ 1 ]; ?> </option>
+                    <option value="<?php echo $model[ 0 ] ?>"><?php echo $model[ 1 ]; ?> </option>
                     <?php 
                     } 
                     ?>

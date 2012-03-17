@@ -43,7 +43,7 @@ foreach( $controllers as $controller ) {
 </table>
 
 <p>
-    <a href = 'insert_employee.php'>add employee</a> 
+    <a href = 'insert_controllers.php'>add controllers</a> 
 </p>
 
     
