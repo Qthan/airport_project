@@ -9,7 +9,7 @@
                     <?php 
                     foreach ( $aircrafts as $aircraft ) {
                     ?>                
-                    <option ><?php echo $aircraft[ 0 ]; ?> </option>
+                    <option value = "<?php echo $aircraft[ 0 ];?>" > <?php echo $aircraft[ 0 ]; ?> </option>
                     <?php 
                     } 
                     ?>
@@ -23,7 +23,7 @@
                     <?php 
                     foreach ( $checktypes as $checktype ) {
                     ?>                
-                    <option ><?php echo $checktype[ 1 ]; ?> </option>
+                    <option value = "<?php echo $checktype[ 0 ];?>" > <?php echo $checktype[ 1 ]; ?> </option>
                     <?php 
                     } 
                     ?>
@@ -31,13 +31,13 @@
             </td>
         </tr>
         <tr> 
-            <td> SSN </td> 
+            <td> Supervisor </td> 
             <td>    
                 <select name ="ssn">
                     <?php 
                     foreach ( $technicians as $technician ) {
                     ?>                
-                    <option ><?php echo $technician[ 0 ]; ?> </option>
+                    <option  value = "<?php echo $technician [ 0 ]; ?>" > <?php echo $technician[ 2 ]." ".$technician[ 3 ]; ?> </option>
                     <?php 
                     } 
                     ?>
