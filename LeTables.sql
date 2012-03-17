@@ -55,7 +55,7 @@ CREATE TABLE expertises (
 CREATE TABLE checktypes (
     checktypeid int NOT NULL,
     name varchar ( 15 ),
-    maxscire int NOT NULL,
+    maxscore int NOT NULL,
     PRIMARY KEY ( checktypeid )
 ) ENGINE=INODB;
 
