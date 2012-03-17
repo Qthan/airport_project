@@ -50,6 +50,9 @@
         <tr> 
             <td> Score </td> <td > <input type = "text" name = "score"> </td>
         </tr>
+        <tr> 
+            <td> Date </td> <td > <input type = "text" id = "datepicker" name = "date"> </td>
+        </tr>
         <tr>
             <td> <input type = "submit" name = "submit" value = "submit"> </td>
         </tr>

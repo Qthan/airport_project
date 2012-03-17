@@ -1,6 +1,6 @@
 <?php 
 
-function insertchecks( $reg_num, $checktypeid, $ssn, $duration, $score ) {
+function insertchecks( $reg_num, $checktypeid, $ssn, $duration, $score, $date ) {
     $success = mysql_query ("
         INSERT INTO checks (
             checkid,
@@ -8,7 +8,8 @@ function insertchecks( $reg_num, $checktypeid, $ssn, $duration, $score ) {
             checktypeid,
             ssn,
             duration,
-            score
+            score,
+            date
         )
         VALUES (
             NULL,
@@ -16,7 +17,8 @@ function insertchecks( $reg_num, $checktypeid, $ssn, $duration, $score ) {
             '$checktypeid',
             '$ssn',
             '$duration',
-            '$score'
+            '$score',
+            '$date'
         )"
     );
     if ( !$success ) die ('query fail'.mysql_error());
