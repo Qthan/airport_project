@@ -57,6 +57,22 @@ function listmodel () {
     return $rows;
 }
 
+function getmcode ( $modelname ) {
+    $res = mysql_query ("
+        SELECT *
+        FROM aircraft_model
+        WHERE model_name = '$modelname'
+        LIMIT 1;"
+    );
+    if ( mysql_num_rows ( $res ) == 1 ) {
+        $model = mysql_fetch_array( $res );
+        return $model;
+    }
+    else {
+        return false;
+    }
+}
+
 function getmodel ( $modelcode ) {
     $res = mysql_query ("
         SELECT *

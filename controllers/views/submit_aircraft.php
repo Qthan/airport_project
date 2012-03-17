@@ -12,13 +12,13 @@
             <td> Construction Date </td> <td > <input type = "text" name = "condate"> </td>
         </tr>
         <tr> 
-        <td> Model Code </td>
+        <td> Model Name </td>
         <td>    
-            <select name ="mcode">
+            <select name ="mname">
                 <?php 
                 foreach ( $models as $model ) {
                 ?>                
-                <option ><?php echo $model[ 0 ]; ?> </option>
+                <option ><?php echo $model[ 1 ]; ?> </option>
                 <?php 
                 } 
                 ?>

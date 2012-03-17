@@ -19,7 +19,7 @@ foreach( $checks as $check ) {
         <td> <?php echo $check[1]; ?></td> 
         <td> <?php echo $check[0]; ?></td>
         <td> <?php echo $check[7]; ?></td>
-        <td> <?php echo $check[18]; ?></td>
+        <td> <?php echo $check[18]." ".$check[17]; ?></td>
         <td> <?php echo $check[4]; ?></td>
         <td> <?php echo $check[5]; ?></td>
         <td> <?php echo $check[8]; ?></td>

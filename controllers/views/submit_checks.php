@@ -17,13 +17,13 @@
             </td>
         </tr>
         <tr> 
-        <td> Checktype ID </td> 
+        <td> Checktype </td> 
             <td>    
                 <select name ="checktypeid">
                     <?php 
                     foreach ( $checktypes as $checktype ) {
                     ?>                
-                    <option ><?php echo $checktype[ 0 ]; ?> </option>
+                    <option ><?php echo $checktype[ 1 ]; ?> </option>
                     <?php 
                     } 
                     ?>
