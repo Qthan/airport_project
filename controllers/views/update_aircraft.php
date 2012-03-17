@@ -14,16 +14,16 @@
         <tr> 
         <td> Model Code </td> 
         <td>    
-            <select name ="mcode" value = "<?php echo $get[ 3 ]; ?>">
-                <?php 
+            <select name ="mcode" >
+            <?php 
                 foreach ( $models as $model ) {
                 ?>                
-                <option <?php if ( $get[ 3 ] == $model[ 0 ] ) { ?> selected = "selected" <?php } ?> >
-                <?php echo $model[ 0 ];?>
+                <option value="<?php echo $model[ 0 ] ?>" <?php if ( $get[ 3 ] == $model[ 0 ] ) { ?> selected = "selected" <?php } ?> >
+                <?php echo $model[ 1 ];?>
                 </option>
                 <?php 
                 }
-                ?>
+            ?>
             </select>
         </td>
         </tr>
