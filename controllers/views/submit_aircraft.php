@@ -18,7 +18,7 @@
                 <?php 
                 foreach ( $models as $model ) {
                 ?>                
-                <option ><?php echo $model[ 1 ]; ?> </option>
+                <option value="<?php echo $model[ 0 ] ?>"><?php echo $model[ 1 ]; ?> </option>
                 <?php 
                 } 
                 ?>

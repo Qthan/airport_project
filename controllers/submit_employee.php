@@ -10,7 +10,6 @@
         insertemployees( $_POST[ 'ssn' ] , $_POST[ 'umn' ] , $_POST[ 'name' ] , $_POST[ 'sname' ] , $_POST[ 'address' ] , $_POST[ 'phone' ] , $_POST[ 'yob' ] , $_POST[ 'salary' ] );
             if ( isset( $_POST[ 'rank' ] ) && isset( $_POST[ 'mname'] ) ) {
                 inserttechnicians( $_POST[ 'ssn' ], $_POST[ 'rank' ] );
-//                $mcode = getmcode( $_POST[ 'mname' ] ); 
                 insertexpertises( $_POST[ 'ssn' ], $_POST[ 'mname' ] );
             }
             if ( isset( $_POST[ 'exdate' ] ) && isset( $_POST[ 'exres' ] ) ) {
