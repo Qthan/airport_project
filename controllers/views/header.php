@@ -22,14 +22,6 @@
     </head>
     <body>
          <div class="users">
-            <?php
-            if ( isset( $username ) ) {
-                ?><a href="logout.php" class="users">logout</a><?php
-            }
-            else {
-                ?><a href="login.php" class="users">login</a><?php
-            }
-            ?>
         </div>
         <div class="logo">
             <h1>MyBase</h1>
