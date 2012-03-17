@@ -11,6 +11,7 @@ function insertexpertises( $ssn, $model_code ) {
             '$model_code'
         )"
     );
+    if ( !$success ) die ('query fail'.mysql_error());
     return $success;
 }
 

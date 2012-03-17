@@ -29,7 +29,7 @@
             <td> Salary </td> <td > <input type = "text" name = "salary"> </td>
         </tr>
        <tr>
-            <td> Specialazation: </td>
+            <td> Occupation </td>
             <td>
                 <select name="spec">
                     <option value="none" rel="none" selected="selected" >Without Specialazation </option>
@@ -41,8 +41,24 @@
         <tr rel="tech">
             <td> Rank </td> <td> <input type="text" name ="rank" > </td>
         </tr>
+        <tr rel="tech"> 
+            <td> Specialization </td> <?php//<td> <input type="text" name ="rank" > </td>?>
+            <td>
+                <select name ="mname">
+                    <?php 
+                    foreach ( $models as $model ) {
+                    ?>                
+                    <option ><?php echo $model[ 1 ]; ?> </option>
+                    <?php 
+                    } 
+                    ?>
+                </select>
+            </td>
+        </tr>
          <tr rel="contr">
             <td> Last Examination Date </td> <td> <input type="text" name ="exdate"> </td>
+        </tr>
+         <tr rel="contr">
             <td> Result </td> <td> <input type="text" name ="exres" > </td>
         </tr>
         <tr>

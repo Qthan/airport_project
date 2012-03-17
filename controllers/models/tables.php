@@ -54,10 +54,9 @@
     mysql_query( $sql, $con );    
     
     $sql = "CREATE TABLE expertises (
-    ssn int NOT NULL,
+    ssn int NOT NULL PRIMARY KEY,
     model_code int NOT NULL,
-    PRIMARY KEY ( ssn, model_code ),
-    FOREIGN KEY ( ssn ) REFERENCES employees ( ssn ) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY ( ssn ) REFERENCES technicians ( ssn ) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY ( model_code ) REFERENCES aircraft_model ( model_code ) ON DELETE CASCADE ON UPDATE CASCADE
     ) ENGINE=INNODB";
 
