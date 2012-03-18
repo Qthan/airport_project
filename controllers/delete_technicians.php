@@ -4,6 +4,6 @@
 
     if ( (isset( $_POST[ 'delssn' ] ) ) ) {
         deletetechnicians( $_POST[ 'delssn' ] );
-        header( 'Location: technicians.php' );
+        header( 'Location: employees_tabs.php' );
     }
 ?>

@@ -73,7 +73,7 @@
             }
         }
 
-       header( 'Location: employees.php' );
+       header( 'Location: employees_tabs.php' );
     }
 ?>
 

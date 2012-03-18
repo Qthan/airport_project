@@ -15,7 +15,7 @@
             if ( isset( $_POST[ 'exdate' ] ) && isset( $_POST[ 'exres' ] ) ) {
                 insertcontrollers( $_POST[ 'ssn' ], $_POST[ 'exdate' ], $_POST[ 'exres' ]);
             }
-       header( 'Location: employees.php' );
+       header( 'Location: employees_tabs.php' );
     }
 ?>
 

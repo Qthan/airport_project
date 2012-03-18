@@ -4,6 +4,6 @@
 
     if ( (isset( $_POST[ 'delssn' ] ) ) ) {
         deletecontrollers( $_POST[ 'delssn' ] );
-        header( 'Location: controllers.php' );
+        header( 'Location: employees_tabs.php' );
     }
 ?>

@@ -49,7 +49,7 @@
         <div class = "menu">
                 <table >
                  <tr>
-                   <td> <a href="emptabs.php" >employess</a> </td>
+                   <td> <a href="employees_tabs.php" >employess</a> </td>
                    <td> <a href="aircraft.php" >planes</a> </td>
                    <td> <a href="checks.php" >checks </a></td>
                  </tr>
