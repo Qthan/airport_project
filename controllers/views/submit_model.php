@@ -1,8 +1,5 @@
 <?php include 'header.php';
 ?>
-<script src="js/jquery.validate.js" type="text/javascript"></script>
-<script src="js/custom.js" type="text/javascript"></script>
-
 
 <form class="cmxform" action = "submit_model.php" id="modelform" method = "post">
     <table>

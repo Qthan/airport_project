@@ -40,8 +40,10 @@
             });
         });
         </script>
-            <script type="text/javascript" src="js/usableform.js"></script>
-    </head>
+        <script type="text/javascript" src="js/usableform.js"></script>
+        <script src="js/jquery.validate.js" type="text/javascript"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
+     </head>
     <body>
         <div class="logo">
             <h1><img src = "css/images/logo.png" alt = "airport logo"</h1>
