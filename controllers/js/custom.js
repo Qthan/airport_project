@@ -1,7 +1,3 @@
-$.validator.setDefaults({
-	submitHandler: function() { alert("submitted!"); }
-});
-
 $().ready(function() {
 	// validate signup form on keyup and submit
 	$("#modelform").validate({

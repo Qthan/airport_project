@@ -1,9 +1,6 @@
 <?php include 'header.php';
 ?>
 
-<script src="js/jquery.validate.js" type="text/javascript"></script>
-<script src="js/custom.js" type="text/javascript"></script>
-
 <form class="cmxform" id="aircraftform" action = "submit_aircraft.php" method = "post">
     <table>
         <tr> 
