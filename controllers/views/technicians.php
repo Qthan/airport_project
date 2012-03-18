@@ -2,7 +2,7 @@
 ?>
 <p>
 </p>
-<table>
+<table class = "listing">
     <tr>
         <th>SSN</th>
         <th>UMN</th>

@@ -1,6 +1,6 @@
 <?php include 'header.php';
 ?>
-<table>
+<table class = "listing">
     <tr>
         <th >Checktype ID</th>
         <th >Check Name</th>

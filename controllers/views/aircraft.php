@@ -3,7 +3,7 @@
 <p>
     <a href = 'aircraft_model.php'>view models</a>
 </p>
-<table >
+<table class = "listing" >
         <th >Registration Number</th>
         <th >Air Carrier</th>
         <th >Construction Date</th>

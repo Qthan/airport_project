@@ -3,7 +3,7 @@
 <p>
     <a href = 'checktypes.php'>view checktypes</a>
 </p>
-<table>
+<table class = "listing">
     <tr>
         <th >Registration Number</th>
         <th >Check ID</th>

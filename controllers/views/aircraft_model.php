@@ -2,7 +2,7 @@
 <?php include 'header.php';
 ?>
 
-<table>
+<table class = "listing">
     <tr>
         <th >Model Code</th>
         <th >Model Name</th>

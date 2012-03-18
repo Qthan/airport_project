@@ -31,22 +31,26 @@ th {
     background-color:#222222;
     color:#DCE3F0;
 }
-tr:nth-child(odd) {
-    background-color:#DCE3F0; 
-}
 
 table { 
     border-collapse: collapse; 
 }
-td {
+table.listing td{
     padding-right: 10px;
     padding-left: 15px;
 }
-
-tr:nth-child(even) {
+table.listing tr:nth-child(odd) {
     background-color:#F3F3F3; 
+    border-width: 1px;
+    border-color:#222222; ;
+    border-style: solid;
 }
-
+table.listing tr:nth-child(even) {
+    background-color:#DCE3F0; 
+    border-width: 1px;
+    border-color:#222222; ;
+    border-style: solid;
+}
 .buttons { 
     width: 68px;
     height: 20px;

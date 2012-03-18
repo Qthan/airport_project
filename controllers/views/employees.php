@@ -5,7 +5,7 @@
     <a href = 'controllers.php'>view controllers</a>
     <a href = 'technicians.php'>view technicians</a>
 </p>
-<table>
+<table class="listing">
     <tr>
         <th >ssn</th>
         <th >umn</th>

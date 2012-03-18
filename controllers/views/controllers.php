@@ -1,6 +1,6 @@
 <?php include 'header.php';
 ?>
-<table>
+<table class = "listing">
     <tr>
         <th >ssn</th>
         <th >umn</th>

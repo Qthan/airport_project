@@ -37,7 +37,7 @@
             <h1><img src = "css/images/logo.png" alt = "airport logo"</h1>
         </div>
         <div class = "menu">
-                <table>
+                <table >
                  <tr>
                    <td> <a href="employees.php" >employess</a> </td>
                    <td> <a href="aircraft.php" >planes</a> </td>
