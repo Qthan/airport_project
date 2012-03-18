@@ -1,4 +1,5 @@
-<?php include 'header.php';
+<?php 
+//  include 'header.php';
 ?>
 <table class = "listing">
     <tr>
@@ -49,5 +50,7 @@ foreach( $controllers as $controller ) {
 </p>
 
     
-<?php include 'footer.php';
+<?php 
+    //include 'footer.php';
+
 ?>

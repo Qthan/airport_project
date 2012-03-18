@@ -1,10 +1,8 @@
-<?php
-   include 'header.php';
-?>
-<p>
+<?php/*<p>
     <a href = 'controllers.php'>view controllers</a>
     <a href = 'technicians.php'>view technicians</a>
-</p>
+    </p>
+ */?>
 <table class="listing">
     <tr>
         <th >ssn</th>
@@ -46,23 +44,6 @@ foreach( $employees as $employee ) {
       </tr>
     <?php } ?>
 </table>
-
 <p>
     <a href = 'insert_employee.php'>add employee</a> 
 </p>
-
-<div>
-    <p> Budget </p>    
-    <table>
-        <tr> 
-            <th> Average Salary </th> <td> <?php echo number_format( $avg, 2, '.', '' ); ?> </td>
-        </tr>
-        <tr> 
-            <th> Total Salary </th> <td> <?php echo $sum; ?> </td>
-        </tr>
-    </table>
-</div>
-
-    
-<?php  include 'footer.php';
-?>

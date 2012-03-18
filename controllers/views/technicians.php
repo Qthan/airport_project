@@ -1,7 +1,5 @@
-<?php include 'header.php';
+<?php //include 'header.php';
 ?>
-<p>
-</p>
 <table class = "listing">
     <tr>
         <th>SSN</th>
@@ -51,5 +49,5 @@ foreach( $technicians as $technician ) {
 </p>
 
     
-<?php  include 'footer.php';
+<?php//  include 'footer.php';
 ?>

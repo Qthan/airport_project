@@ -51,6 +51,12 @@ table.listing tr:nth-child(even) {
     border-color:#222222; ;
     border-style: solid;
 }
+
+form.cmxform label.error, label.error {
+        color: red;
+         font-style: italic;
+}
+
 .buttons { 
     width: 68px;
     height: 20px;
@@ -58,4 +64,6 @@ table.listing tr:nth-child(even) {
     font-size: 10px;
 }
 
-
+#tabs {
+    width: 100%;
+}
