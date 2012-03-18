@@ -43,6 +43,18 @@ foreach( $checks as $check ) {
     <a href = 'insert_checks.php'>add check</a> 
 </p>
 
+    <table>
+    <?php
+    foreach( $stats as $stat ) {
+    ?><tr>
+            <td> <?php echo $stat[0]; ?> </td>
+            <td> <?php echo $stat[1]; ?> </td>
+      </tr>
+    <?php
+    }
+    ?>
+    </table>
+
     
 <?php  include 'footer.php';
 ?>

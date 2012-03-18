@@ -95,4 +95,23 @@ function getchecks ( $checkid ) {
     }
 }
 
+function typegroup () {
+    $res = mysql_query("
+        SELECT check_name, count( checkid )
+        FROM checks 
+        INNER JOIN checktypes
+        ON checks.checktypeid = checktypes.checktypeid
+        GROUP BY check_name"
+    );
+
+    if ( !$res ) {
+        die ( 'query fail'.mysql_error() );
+    }
+
+    while ( $row = mysql_fetch_array( $res ) ) {
+        $rows[] = $row;
+    }
+
+    return $rows;
+}
 ?>
