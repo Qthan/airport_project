@@ -1,18 +1,22 @@
 <?php include 'header.php';
 ?>
-<form action = "submit_aircraft.php" method = "post">
+
+<script src="js/jquery.validate.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+
+<form class="cmxform" id="aircraftform" action = "submit_aircraft.php" method = "post">
     <table>
         <tr> 
-            <td> Registration Number </td> <td > <input type = "text" name = "regnum"> </td>
+            <td> Registration Number </td> <td > <input type = "text" id = "regnum" name = "regnum"> </td>
         </tr>
         <tr> 
-            <td> Air Carrier </td> <td > <input type = "text" name = "carrier"> </td>
+            <td> Air Carrier </td> <td > <input type = "text" id = "carrier" name = "carrier"> </td>
         </tr>
         <tr> 
             <td> Construction Date </td> <td > <input type = "text" name = "condate" id="datepicker"> </td>
         </tr>
         <tr> 
-        <td> Model Name </td>
+            <td> Model Name </td>
         <td>    
             <select name ="mname">
                 <?php 
