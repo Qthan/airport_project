@@ -9,6 +9,9 @@
         <th >Manufacturer</th>
         <th >Capacity</th>
         <th >Weight</th>
+        <th ></th>
+        <th ></th>
+
     </tr>
 <?php
 foreach( $models as $model ) {
@@ -19,13 +22,13 @@ foreach( $models as $model ) {
         <td> <?php echo $model[3]; ?></td>
         <td> <?php echo $model[4]; ?></td>
         <td> 
-            <form action = "delete_model.php" method = "post">
+            <form class ="buttons" action = "delete_model.php" method = "post">
                 <input name = "delmodelcode" type = "hidden" value = "<?php echo $model[0]; ?>">
                 <input type = "submit" value = "delete">
             </form>
         </td>
         <td> 
-            <form action = "update_model.php" method = "post">
+            <form class ="buttons" action = "update_model.php" method = "post">
                 <input name = "updmodelcode" type = "hidden" value = "<?php echo $model[0]; ?>">
                 <input type = "submit" value = "update">
             </form>

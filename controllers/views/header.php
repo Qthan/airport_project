@@ -4,8 +4,7 @@
     <head>
         <title>My Base</title>
         <link rel="stylesheet" href="css/jquery-ui-1.8.18.custom.css">
-        <link type="text/css" rel="stylesheet" href="css/style.css" />
-	
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
 		<script src="js/jquery-1.7.1.min.js"></script>
 		<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
 		<script>
@@ -17,22 +16,33 @@
                     maxDate: "+0w"
                 });
 			});
-		</script>
+            </script>
+        <script>
+            $(document).ready(function() {
+                $( "input:submit, a, button", ".menu" ).button();
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $( "input:submit, a, button", ".buttons" ).button();
+            });
+        </script>
+        <script type="text/javascript" src="js/usableform.js"></script>
         <script type="text/javascript" src="js/usableform.js"></script>
     </head>
     <body>
          <div class="users">
         </div>
         <div class="logo">
-            <h1>MyBase</h1>
+            <h1><img src = "css/images/logo.png" alt = "airport logo"</h1>
         </div>
-        <div class="menu">
-            <table class="menu">
-                <tr>
-                   <td> <a href="employees.php" class="menu">employess</a> </td>
-                   <td> <a href="aircraft.php" class="menu">planes</a> </td>
-                   <td> <a href="checks.php" class="menu">checks </a></td>
-                </tr>
-            </table>
+        <div class = "menu">
+                <table>
+                 <tr>
+                   <td> <a href="employees.php" >employess</a> </td>
+                   <td> <a href="aircraft.php" >planes</a> </td>
+                   <td> <a href="checks.php" >checks </a></td>
+                 </tr>
+                </table>
         </div>
         <div class="content">

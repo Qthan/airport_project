@@ -66,6 +66,21 @@ function updateemployees ( $ssn, $changing, $value ) {
     return mysql_affected_rows();
 }
 
+function listfromview () {
+    $res = mysql_query ("
+        SELECT *
+        FROM employees_spec"
+    );
+    if ( !$res ) {
+        die ('query fail' . mysql_error());
+    }
+    while ( $row = mysql_fetch_array( $res ) ) {
+        $rows[] = $row;
+    }
+
+    return $rows;
+}
+
 function listemployees () {
     $res = mysql_query ("
         SELECT *

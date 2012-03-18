@@ -1,82 +1,57 @@
-html, body {
-     margin: 0;
-     padding: 0;
-     font-family: "Trebuchet MS", Verdana;
-     background-color: white;
+div.logo {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 h1 {
-     margin:0;
-     font-size: 150%;
-     font-weight: normal;
-     color: #727272;
-     /*border-bottom: 3px dotted #ccc;*/
-     padding: 20px;
+    margin: 0px;
+    padding: 0px;
 }
-
-div.logo {
-    background-color:#CBCBCB;
-    width: 1280px;
-    height: 100px;
-    position:fixed;
-    top:30px;
-    left:0px;
-    text-align:center;
-}
-
 div.menu {
-    background-color:#989898;
-    padding:10px;
-    width: 1260px;
-    height: 20px;
-    position:relative;
-    top:130px;
-    left:0px;
-    text-align:center;
-}
-    
-div.users {
-    background-color:#315963;
-    filter:alpha(opacity=50);
-    padding-right:10px;
-    width: 1270px;
-    height: 30px;
-    position:fixed;
-    top:0px;
-    left:0px;
-    text-align:right;
+    position:absolute;
+    left: 150px;
+    top: 88px;
 }
 
 div.content {
-    padding: 10px;
-    width: 1260;
     position:absolute;
-    top:170px;
-    left:0px;
+    top: 120px;
+    left: 150px;
+    width: 100%;
+    padding-top: 20px;
 }
 
-
-a.menu { 
-    padding:10px;
-    text-decoration: none;
-    color: #315963; 
-    font-weight: bold;
+th {
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color:#222222;
+    color:#DCE3F0;
+}
+tr:nth-child(odd) {
+    background-color:#DCE3F0; 
 }
 
-a.menu:hover {
-    border-bottom: 1px;
-    color: #727272;
+table { 
+    border-collapse: collapse; 
+}
+td {
+    padding-right: 10px;
+    padding-left: 15px;
 }
 
-a.users { 
-    text-decoration: none;
-    color: #CBCBCB; 
-    font-weight: bold;
+tr:nth-child(even) {
+    background-color:#BECBE0; 
 }
 
-a.users:hover {
-    border-bottom: 1px;
-    color: #727272;
+.buttons { 
+    width: 68px;
+    height: 20px;
+    margin-top: 2px;
+    font-size: 10px;
 }
 
-.ui-widget { font-size: 12px; }
 

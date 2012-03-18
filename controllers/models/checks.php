@@ -97,6 +97,52 @@ function getchecks ( $checkid ) {
     }
 }
 
+function typegroup_has () {
+    $res = mysql_query("
+        SELECT check_name, count( checkid )
+        FROM checks 
+        INNER JOIN checktypes
+        ON checks.checktypeid = checktypes.checktypeid
+        WHERE checks.score >= (checktypes.maxscore/2)
+        GROUP BY check_name"
+    );
+
+    if ( !$res ) {
+        die ( 'query fail'.mysql_error() );
+    }
+
+    while ( $row = mysql_fetch_array( $res ) ) {
+        $rows[] = $row;
+    }
+
+    return $rows;
+}
+
+function onlybypros () {
+    $res = mysql_query("
+        SELECT t.rank,e.surname,e.fname,count( c.checkid )
+        FROM employees e
+        INNER JOIN technicians t
+        ON e.ssn = t.ssn
+        INNER JOIN checks c
+        ON c.ssn = t.ssn
+        INNER JOIN checktypes ct
+        ON c.checktypeid = ct.checktypeid
+        GROUP BY t.ssn
+        HAVING t.rank = 1"
+    );
+
+    if ( !$res ) {
+        die ( 'query fail'.mysql_error() );
+    }
+
+    while ( $row = mysql_fetch_array( $res ) ) {
+        $rows[] = $row;
+    }
+
+    return $rows;
+}
+
 function typegroup () {
     $res = mysql_query("
         SELECT check_name, count( checkid )
@@ -106,6 +152,31 @@ function typegroup () {
         GROUP BY check_name"
     );
 
+    if ( !$res ) {
+        die ( 'query fail'.mysql_error() );
+    }
+
+    while ( $row = mysql_fetch_array( $res ) ) {
+        $rows[] = $row;
+    }
+
+    return $rows;
+}
+
+function arazoun () {
+    $res = mysql_query("
+        SELECT e.fname, e.surname
+        FROM employees e
+        INNER JOIN technicians t
+        ON e.ssn = t.ssn
+        WHERE NOT EXISTS  ( SELECT em.*,te.*,c.*
+                            FROM employees em
+                            INNER JOIN technicians te
+                            ON em.ssn = te.ssn
+                            INNER JOIN checks c
+                            ON c.ssn = te.ssn
+                            WHERE em.ssn = e.ssn)"
+    );
     if ( !$res ) {
         die ( 'query fail'.mysql_error() );
     }

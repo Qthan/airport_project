@@ -13,6 +13,8 @@
         <th >Score</th>
         <th >Max Score</th>
         <th >Date</th>
+        <th ></th>
+        <th ></th>
     </tr>
 <?php
 foreach( $checks as $check ) {
@@ -26,13 +28,13 @@ foreach( $checks as $check ) {
         <td> <?php echo $check[9]; ?></td>
         <td> <?php echo $check[6]; ?></td>
         <td> 
-            <form action = "delete_checks.php" method = "post">
+            <form class ="buttons" action = "delete_checks.php" method = "post">
                 <input name = "delcheckid" type = "hidden" value = "<?php echo $check[0]; ?>">
                 <input type = "submit" value = "delete">
             </form>
         </td>
         <td> 
-            <form action = "update_checks.php" method = "post">
+            <form class ="buttons" action = "update_checks.php" method = "post">
                 <input name = "updcheckid" type = "hidden" value = "<?php echo $check[0]; ?>">
                 <input type = "submit" value = "update">
             </form>
@@ -57,6 +59,41 @@ foreach( $checks as $check ) {
     ?>
     </table>
 
+    <table>
+    <?php
+    foreach( $passes as $pass ) {
+    ?><tr>
+            <td> <?php echo $pass[0]; ?> </td>
+            <td> <?php echo $pass[1]; ?> </td>
+      </tr>
+    <?php
+    }
+    ?>
+    </table>
+
+    <table>
+    <?php
+    foreach( $pros as $pro ) {
+    ?><tr>
+            <td> <?php echo $pro[3]; ?> </td>
+            <td> <?php echo $pro[1]; ?> </td>
+      </tr>
+    <?php
+    }
+    ?>
+    </table>
+
+    <table>
+    <?php
+    foreach( $idles as $idle ) {
+    ?><tr>
+            <td> <?php echo $idle[0]; ?> </td>
+            <td> <?php echo $idle[1]; ?> </td>
+      </tr>
+    <?php
+    }
+    ?>
+    </table>
     
 <?php  include 'footer.php';
 ?>

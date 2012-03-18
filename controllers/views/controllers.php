@@ -12,6 +12,8 @@
         <th >Salary</th>
         <th >Check Date </th>
         <th >Check Result </th>
+        <th ></th>
+        <th ></th>
     </tr>
 <?php
 foreach( $controllers as $controller ) {
@@ -27,13 +29,13 @@ foreach( $controllers as $controller ) {
         <td> <?php echo $controller[1]; ?></td>
         <td> <?php echo $controller[2]; ?></td>
         <td> 
-            <form action = "delete_controller.php" method = "post">
+            <form class ="buttons" action = "delete_controller.php" method = "post">
                 <input name = "delssn" type = "hidden" value = "<?php echo $controller[3]; ?>">
                 <input type = "submit" value = "delete">
             </form>
         </td>
         <td> 
-            <form action = "update_employees.php" method = "post">
+            <form class ="buttons" action = "update_employees.php" method = "post">
                 <input name = "updssn" type = "hidden" value = "<?php echo $controller[3]; ?>">
                 <input type = "submit" value = "update">
             </form>
@@ -47,5 +49,5 @@ foreach( $controllers as $controller ) {
 </p>
 
     
-<?php  include 'footer.php';
+<?php include 'footer.php';
 ?>

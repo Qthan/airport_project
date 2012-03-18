@@ -14,6 +14,8 @@
         <th>Salary</th>
         <th>Rank</th>
         <th>Experts In</th>    
+        <th ></th>
+        <th ></th>
     </tr>
 <?php
 foreach( $technicians as $technician ) {
@@ -29,13 +31,13 @@ foreach( $technicians as $technician ) {
         <td> <?php echo $technician[9]; ?></td>
         <td> <?php echo $technician[13];?></td>
         <td> 
-            <form action = "delete_technicians.php" method = "post">
+            <form class ="buttons" action = "delete_technicians.php" method = "post">
                 <input name = "delssn" type = "hidden" value = "<?php echo $technician[0]; ?>">
                 <input type = "submit" value = "delete">
             </form>
         </td>
         <td> 
-            <form action = "update_employees.php" method = "post">
+            <form class ="buttons" action = "update_employees.php" method = "post">
                 <input name = "updssn" type = "hidden" value = "<?php echo $technician[0]; ?>">
                 <input type = "submit" value = "update">
             </form>
