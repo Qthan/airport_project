@@ -3,7 +3,7 @@
 
 
 <form class="cmxform" id="modelform" action = "change_model.php" method = "post">
-    <table>
+    <table class = "formz">
         <tr> 
         <td> Model Code</td> <td > <input type = "text" readonly = "readonly" value = " <?php echo $get[ 0 ];?> " name = "modelcode" > </td>
         </tr>
@@ -20,7 +20,12 @@
         <td> Weight </td> <td > <input type = "text" name = "weight" value = "<?php echo $get[ 4 ]; ?>" id="weight" > </td>
         </tr>
         <tr>
-            <td> <input type = "submit" name = "submit" value = "submit"> </td>
+            <td></td>
+            <td>
+                <div class = "buttons"> 
+                    <input type = "submit" name = "submit" value = "submit"> 
+                </div>
+            </td>
         </tr>
     </table>
 
