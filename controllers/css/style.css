@@ -25,6 +25,12 @@ div.content {
     padding-top: 20px;
 }
 
+div.rmenu {
+    position:absolute;
+    left: 0px;
+    top: 120px;
+}
+
 th {
     padding-right: 10px;
     padding-left: 10px;
@@ -52,9 +58,29 @@ table.listing tr:nth-child(even) {
     border-style: solid;
 }
 
+table.formz td: {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+table.formz tr:nth-child(odd) {
+    background-color:#F3F3F3; 
+    border-width: 1px;
+    border-color:#222222; ;
+    border-style: solid;
+}
+
+table.formz tr:nth-child(even) {
+    background-color:#DCE3F0; 
+    border-width: 1px;
+    border-color:#222222; ;
+    border-style: solid;
+}
+
+
 form.cmxform label.error, label.error {
-        color: red;
-         font-style: italic;
+    color: red;
+    font-style: italic;
 }
 
 .buttons { 
@@ -65,5 +91,4 @@ form.cmxform label.error, label.error {
 }
 
 #tabs {
-    width: 100%;
 }

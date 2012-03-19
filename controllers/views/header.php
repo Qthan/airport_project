@@ -46,7 +46,7 @@
      </head>
     <body>
         <div class="logo">
-            <h1><img src = "css/images/logo.png" alt = "airport logo"</h1>
+            <h1><a href = employees_tabs.php><img src = "css/images/logo.png" alt = "airport logo"></a></h1>
         </div>
         <div class = "menu">
                 <table >

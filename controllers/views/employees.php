@@ -44,6 +44,3 @@ foreach( $employees as $employee ) {
       </tr>
     <?php } ?>
 </table>
-<p>
-    <a href = 'insert_employee.php'>add employee</a> 
-</p>

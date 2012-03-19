@@ -2,7 +2,7 @@
 ?>
 
 <form class="cmxform" id="aircraftform" action = "submit_aircraft.php" method = "post">
-    <table>
+    <table class= "formz">
         <tr> 
             <td> Registration Number </td> <td > <input type = "text" id = "regnum" name = "regnum"> </td>
         </tr>
