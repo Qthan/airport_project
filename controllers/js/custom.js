@@ -121,4 +121,102 @@ $().ready(function() {
 		}
 	});
 	
+	$("#employeesform").validate({
+		rules: {
+			ssn: {
+				required: true,
+				number: true
+			},
+			umn: {
+				required: true,
+				number: true
+			},
+			name: {
+				required: true,
+				minlength: 3
+			},
+			sname: {
+				required: true,
+				minlength: 3
+			},
+			address: {
+				required: true,
+				minlength: 3
+			},
+			phone: {
+				required: true,
+				minlength: 6,
+				number: true
+			},
+			yob: {
+				required: true,
+				minlength: 4,
+				maxlength: 4,
+				number: true
+			},
+			salary: {
+				required: true,
+				minlength: 3,
+				number: true
+			},
+			rank: {
+				required: true,
+				number: true
+			},
+			exdate: "required",
+			exres: {
+				required: true,
+				number: true
+			}
+
+		},
+		messages: {
+			ssn: {
+				required: " Please provide an SSN",
+				number: " SSN must have a numeric value"
+			},
+			umn: {
+				required: " Please provide a UMN",
+				number: " UMN must have a numeric value"
+			},
+			name: {
+				required: " Please fill the name",
+				minlength: " Name must be at least 3 characters"
+			},
+			sname: {
+				required: " Please fill the surname",
+				minlength: " Surame must be at least 3 characters"
+			},
+			address: {
+				required: " Please fill the address",
+				minlength: " Address must be at least 3 characters"
+			},
+			phone: {
+				required: " Please provide a phone number",
+				minlength: " Phone must have at least 6 digits",
+				number: " Phone must have a numeric value"
+			},
+			yob: {
+				required: " Please provide a year of birth",
+				minlength: " Year of birth is not valid",
+				maxlength: " Year of birth is not valid",
+				number: " Year of birth is not valid"
+			},
+			salary: {
+				required: " Please fill the salary",
+				minlength: " Salary must have at least 3 digits",
+				number: " Salary must have a numeric value"
+			},
+			rank: {
+				required: " Please fill the rank",
+				number: " Rank must have a numeric value"
+			},
+			exdate: " Please fill the date",
+			exres: {
+				required: " Please provide the check result",
+				number: " Check result must have a numeric value"
+			}
+		}
+	});
+	
 });

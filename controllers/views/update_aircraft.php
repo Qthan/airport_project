@@ -3,7 +3,7 @@
 <form action = "change_aircraft.php" class="cmxform" id="aircraftform" method = "post">
     <table class = "formz">
         <tr> 
-        <td> Registration Number </td> <td > <input type = "text" readonly = "readonly" value = " <?php echo $get[ 0 ];?> " name = "regnum"  > </td>
+        <td> Registration Number </td> <td > <input type = "text" readonly = "readonly" value = " <?php echo $get[ 0 ];?> " name = "regnumb"  > </td>
         </tr>
         <tr> 
         <td> Air Carrier </td> <td > <input type = "text" name = "carrier" value = "<?php echo $get[ 1 ]; ?>" id="carrier" > </td>
