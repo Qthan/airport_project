@@ -1,10 +1,10 @@
 <?php include 'header.php';
 ?>
 
-<form action = "submit_employee.php" method = "post">
+<form class="cmxform" id="employeesform" action = "submit_employee.php" method = "post">
     <table>
         <tr> 
-            <td> SSN </td> <td > <input type = "text" name = "ssn"> </td>
+            <td> SSN </td> <td > <input type = "text" name = "ssn" id="ssn"> </td>
         </tr>
         <tr> 
             <td> UMN </td> <td > <input type = "text" name = "umn"> </td>
@@ -31,7 +31,7 @@
             <td> Occupation </td>
             <td>
                 <select name="spec">
-                <option value="none" rel="none" <?php if ( $add==='none' ){?> selected="selected" <?php } ?> >Without Specialazation</option>
+                    <option value="none" rel="none" <?php if ( $add==='none' ){?> selected="selected" <?php } ?> >Without Specialazation</option>
                     <option value="tech" rel="tech" <?php if ( $add==='tech' ){?> selected="selected" <?php } ?> >Technician</option> 
                     <option value="contr" rel="contr" <?php if ( $add==='contr' ){?> selected="selected" <?php } ?>  >Air Traffic Controler </option>
                 </select>
@@ -55,7 +55,7 @@
             </td>
         </tr>
          <tr rel="contr">
-            <td> Last Examination Date </td> <td> <input type="text" name ="exdate"> </td>
+            <td> Last Examination Date </td> <td> <input type="text" name ="exdate" id="datepicker"> </td>
         </tr>
          <tr rel="contr">
             <td> Result </td> <td> <input type="text" name ="exres" > </td>

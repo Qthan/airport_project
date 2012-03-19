@@ -11,10 +11,10 @@ else {
 }
 ?>
 
-<form action = "change_employees.php" method = "post">
+<form class="cmxform" id="employeesform" action = "change_employees.php" method = "post">
     <table>
         <tr> 
-        <td> SSN </td> <td > <input type = "text" readonly = "readonly" value = " <?php echo $get[ 0 ];?> " name = "ssn" > </td>
+        <td> SSN </td> <td > <input type = "text" readonly = "readonly" value = "<?php echo $get[ 0 ];?>" name = "ssnro" > </td>
         </tr>
         <tr> 
         <td> UMN </td> <td > <input type = "text" name = "umn" value = "<?php echo $get [ 1 ]; ?>" > </td>
@@ -55,7 +55,7 @@ else {
                 }
             else if ( $getc == $get ) { 
                 $date = $get[ 9 ];
-                $result = $get [ 10 ];
+                $result = $get[ 10 ];
             ?>
             <td>
                 <select name="spec">
@@ -82,11 +82,31 @@ else {
             ?>
         </tr>
         <tr rel="tech">
-            <td> Rank </td> <td> <input type="text" name  ="rank" value ="<?php echo $rank;?> " > </td>
+            <td> Rank </td> <td> <input type="text" name  ="rank" value ="<?php echo $rank;?>" > </td>
         </tr>
-         <tr rel="contr">
-            <td> Last Examination Date </td> <td> <input type="text" name ="exdate" value ="<?php echo $date;?> "> </td>
-            <td> Result </td> <td> <input type="text" name ="exres" value ="<?php echo $result;?> " > </td>
+        <tr rel="tech"> 
+            <td> Specialization </td>
+            <td>
+                <select name ="mname">
+                    <option value="notset">none</option>
+                    <?php 
+                    foreach ( $models as $model ) {
+                    ?>                
+                    <option value="<?php echo $model[ 0 ]; ?>" <?php if ($model[ 0 ]==$get[ 11 ]) { $hasexp=1; ?> selected="selected" <?php } ?> ><?php echo $model[ 1 ]; ?> </option>
+                    <?php 
+                    } 
+                    ?>
+                </select>
+                <?php if ( isset ( $hasexp ) ){ ?>
+                <input name = "hasexp" type = "hidden" value = "<?php echo $get[11]; ?>">
+                <?php } ?>        
+            </td>
+        </tr>
+        <tr rel="contr">
+            <td> Last Examination Date </td> <td> <input type="text" name ="exdate" id="datepicker" value ="<?php echo $date;?>"> </td>
+        </tr>
+        <tr rel="contr">
+            <td> Result </td> <td> <input type="text" name ="exres" value ="<?php echo $result;?>"> </td>
         </tr>
         <tr>
             <td> <input type = "submit" name = "submit" value = "submit"> </td>

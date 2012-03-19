@@ -25,10 +25,10 @@ function deleteexpertises ( $ssn, $model_code) {
     return $success;
 }
 
-function updateexpertises ( $ssn, $model_code ) {
+function updateexpertises ( $ssn, $model_code, $value ) {
     $success = mysql_query ("
         UPDATE expertises
-        SET ". "$changing"." = '$value'
+        SET model_code = '$value'
         WHERE ssn = '$ssn' AND model_code = '$model_code'"
     );
 

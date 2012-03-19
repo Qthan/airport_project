@@ -40,13 +40,20 @@ function updatetechnicians ( $ssn, $changing, $value ) {
 
 function gettechnicians( $ssn ) {
     $res = mysql_query("
-        SELECT a.*, b.*
+        SELECT a.*, b.*, x.*, m.*
         FROM employees a
         INNER JOIN technicians b
         ON a.ssn = b.ssn
+        LEFT JOIN expertises x
+        ON x.ssn = b.ssn
+        LEFT JOIN aircraft_model m
+        ON m.model_code = x.model_code
         WHERE a.ssn = '$ssn'
         LIMIT 1;            
         ");
+    
+    if ( !$res ) die ('query fail'.mysql_error());
+        
     if ( mysql_num_rows ( $res ) == 1 ) {
         $check = mysql_fetch_array( $res );
         return $check;
