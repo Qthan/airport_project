@@ -2,7 +2,7 @@
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="el" lang="el"> 
     <head>
-        <title>My Base</title>
+        <title>Airport Base</title>
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/jquery-ui-1.8.18.custom.css">
 		<script src="js/jquery-1.7.1.min.js"></script>

@@ -2,7 +2,7 @@
 ?>
 
 <form class="cmxform" id="employeesform" action = "submit_employee.php" method = "post">
-    <table>
+    <table class = "formz">
         <tr> 
             <td> SSN </td> <td > <input type = "text" name = "ssn" id="ssn"> </td>
         </tr>
@@ -61,7 +61,12 @@
             <td> Result </td> <td> <input type="text" name ="exres" > </td>
         </tr>
         <tr>
-            <td> <input type = "submit" name = "submit" value = "submit"> </td>
+        <td></td>
+        <td> 
+            <div class = "buttons">
+                <input type = "submit" name = "submit" value = "submit"> </td>
+            </div>
+        </td>
         </tr>
        
     </table>

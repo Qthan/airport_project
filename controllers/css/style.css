@@ -80,13 +80,13 @@ table.formz {
     left: 50px;
 }
 
-table.formz td{
+table.formz td {
     padding: 5px;
 }
 
-table.formz tr:last-child {
+table.formz:last-child {
     background-color:#FFFFFF;
-    margin top:5px;
+    margin top:50px;
 }
 
 table.formz tr:nth-child(odd) {

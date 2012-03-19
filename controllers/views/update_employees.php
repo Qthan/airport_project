@@ -12,7 +12,7 @@ else {
 ?>
 
 <form class="cmxform" id="employeesform" action = "change_employees.php" method = "post">
-    <table>
+    <table class = "formz">
         <tr> 
         <td> SSN </td> <td > <input type = "text" readonly = "readonly" value = "<?php echo $get[ 0 ];?>" name = "ssnro" > </td>
         </tr>
@@ -109,7 +109,12 @@ else {
             <td> Result </td> <td> <input type="text" name ="exres" value ="<?php echo $result;?>"> </td>
         </tr>
         <tr>
-            <td> <input type = "submit" name = "submit" value = "submit"> </td>
+            <td></td>
+            <td>
+                <div class = "buttons">
+                     <input type = "submit" name = "submit" value = "submit"> 
+                </div>
+            </td>
         </tr>
     </table>
 

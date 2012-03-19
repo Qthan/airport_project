@@ -1,7 +1,7 @@
 <?php include 'header.php';
 ?>
 <form id="checksform" class="cmxform" action = "submit_checks.php" method = "post">
-    <table>
+    <table class= "formz">
         <tr> 
         <td> Registration Number </td> 
             <td>    
@@ -54,7 +54,12 @@
             <td> Date </td> <td > <input type = "text" id = "datepicker" name = "date"> </td>
         </tr>
         <tr>
-            <td> <input type = "submit" name = "submit" value = "submit"> </td>
+            <td></td>
+            <td>
+                <div class="buttons">
+                     <input type = "submit" name = "submit" value = "submit"> 
+                </div>
+            </td>
         </tr>
     </table>
 

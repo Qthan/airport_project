@@ -2,7 +2,7 @@
 ?>
 
 <form class="cmxform" action = "submit_model.php" id="modelform" method = "post">
-    <table>
+    <table class= "formz">
         <tr> 
             <td> Model Code </td> <td > <input type = "text" id = "model_code" name = "model_code"> </td>
         </tr>
@@ -19,7 +19,12 @@
             <td> Weight </td> <td > <input type = "text" id = "weight" name = "weight"> </td>
         </tr>
         <tr>
-            <td> <input type = "submit" name = "submit" value = "submit"> </td>
+            <td></td>
+            <td>
+                <div class="buttons">
+                     <input type = "submit" name = "submit" value = "submit"> 
+                </div>
+            </td>
         </tr>
     </table>
 

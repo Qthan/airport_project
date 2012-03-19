@@ -1,7 +1,7 @@
 <?php include 'header.php';
 ?>
 <form class="cmxform" id="checksform" action = "change_checks.php" method = "post">
-    <table>
+    <table class = "formz">
         <tr> 
              <td> Registration Number </td> <td > <input type = "text" readonly = "readonly" value = " <?php echo $get[ 1 ];?> " name = "regnum" > </td>
         </tr>
@@ -24,7 +24,13 @@
              <td> Date </td> <td> <input type = "text" name = "date" id="datepicker" value="<?php echo $get[ 6 ]; ?>"></td>
         </tr>
         <tr>
-            <td> <input type = "submit" name = "submit" value = "submit"> </td>
+            <td>
+            </td>
+            <td> 
+                <div class = "buttons">
+                    <input type = "submit" name = "submit" value = "submit"> </td>
+                </div>
+            </td>
         </tr>
     </table>
 
