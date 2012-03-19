@@ -1,5 +1,12 @@
 <?php //include 'header.php';
 ?>
+    <script type="text/javascript" src = "js/tabscripts.js"></script>
+
+<div class = "tabsmenu">
+    <a href = 'insert_technicians.php'>add technician</a> 
+</div>
+
+<div class="listing">
 <table class = "listing">
     <tr>
         <th>SSN</th>
@@ -43,10 +50,8 @@ foreach( $technicians as $technician ) {
       </tr>
     <?php } ?>
 </table>
+</div>
 
-<p>
-    <a href = 'insert_technicians.php'>add technician</a> 
-</p>
 
     
 <?php//  include 'footer.php';

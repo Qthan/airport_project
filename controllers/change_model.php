@@ -7,7 +7,7 @@
         updatemodel( $_POST[ 'modelcode' ], 'manufacturer', $_POST[ 'manufacturer' ]);
         updatemodel( $_POST[ 'modelcode' ], 'capacity', $_POST[ 'capacity' ]);
         updatemodel( $_POST[ 'modelcode' ], 'weight', $_POST[ 'weight' ]);
-        header( 'Location: aircraft_model.php' );
+        header( 'Location: planes_tabs.php' );
     }
 ?>
 

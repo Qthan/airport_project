@@ -1,6 +1,12 @@
 <?php 
 //  include 'header.php';
 ?>
+        <script type="text/javascript" src = "js/myscripts.js"></script>
+
+<div class = "tabsmenu">
+    <a href = 'insert_controllers.php'>add controller</a> 
+</div>
+
 <table class = "listing">
     <tr>
         <th >ssn</th>
@@ -44,11 +50,6 @@ foreach( $controllers as $controller ) {
       </tr>
     <?php } ?>
 </table>
-
-<p>
-    <a href = 'insert_controllers.php'>add controllers</a> 
-</p>
-
     
 <?php 
     //include 'footer.php';

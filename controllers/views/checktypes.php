@@ -1,5 +1,9 @@
-<?php include 'header.php';
-?>
+<script type="text/javascript" src = "js/myscripts.js"></script>
+
+<div class="tabsmenu">
+    <a href = 'insert_checktypes.php'>add checktype</a> 
+</div>
+
 <table class = "listing">
     <tr>
         <th >Checktype ID</th>
@@ -30,10 +34,5 @@ foreach( $checktypes as $checktype ) {
     <?php } ?>
 </table>
 
-<p>
-    <a href = 'insert_checktypes.php'>add checktype</a> 
-</p>
 
     
-<?php  include 'footer.php';
-?>

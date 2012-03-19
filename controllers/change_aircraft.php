@@ -6,7 +6,7 @@
         updateaircraft( $_POST[ 'regnum' ], 'air_carrier', $_POST[ 'carrier' ]);
         updateaircraft( $_POST[ 'regnum' ], 'construction_date', $_POST[ 'condate' ]);
         updateaircraft( $_POST[ 'regnum' ], 'model_code', $_POST[ 'mcode' ]);
-        header( 'Location: aircraft.php' );
+        header( 'Location: planes_tabs.php' );
     }
 ?>
 

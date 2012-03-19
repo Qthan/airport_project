@@ -4,7 +4,7 @@
 
     if ( (isset( $_POST[ 'checkname' ] ) ) && (isset( $_POST[ 'maxscore' ] ) ) ) {
         insertchecktypes( $_POST[ 'checkname' ], $_POST[ 'maxscore' ] );
-        header( 'Location: checktypes.php' );
+        header( 'Location: checks_tabs.php' );
     }
 ?>
 

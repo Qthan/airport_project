@@ -1,8 +1,9 @@
-<?php include 'header.php';
-?>
-<p>
-    <a href = 'checktypes.php'>view checktypes</a>
-</p>
+<script type="text/javascript" src = "js/myscripts.js"></script>
+
+<div class = "tabsmenu">
+    <a href = 'insert_checks.php'>add check</a>
+</div>
+
 <table class = "listing">
     <tr>
         <th >Registration Number</th>
@@ -43,57 +44,4 @@ foreach( $checks as $check ) {
     <?php } ?>
 </table>
 
-<p>
-    <a href = 'insert_checks.php'>add check</a> 
-</p>
-
-    <table>
-    <?php
-    foreach( $stats as $stat ) {
-    ?><tr>
-            <td> <?php echo $stat[0]; ?> </td>
-            <td> <?php echo $stat[1]; ?> </td>
-      </tr>
-    <?php
-    }
-    ?>
-    </table>
-
-    <table>
-    <?php
-    foreach( $passes as $pass ) {
-    ?><tr>
-            <td> <?php echo $pass[0]; ?> </td>
-            <td> <?php echo $pass[1]; ?> </td>
-      </tr>
-    <?php
-    }
-    ?>
-    </table>
-
-    <table>
-    <?php
-    foreach( $pros as $pro ) {
-    ?><tr>
-            <td> <?php echo $pro[3]; ?> </td>
-            <td> <?php echo $pro[1]; ?> </td>
-      </tr>
-    <?php
-    }
-    ?>
-    </table>
-
-    <table>
-    <?php
-    foreach( $idles as $idle ) {
-    ?><tr>
-            <td> <?php echo $idle[0]; ?> </td>
-            <td> <?php echo $idle[1]; ?> </td>
-      </tr>
-    <?php
-    }
-    ?>
-    </table>
     
-<?php  include 'footer.php';
-?>

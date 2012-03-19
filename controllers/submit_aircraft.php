@@ -5,7 +5,7 @@
 
     if ( (isset( $_POST[ 'regnum' ] ) ) && (isset( $_POST[ 'carrier' ] ) ) && (isset( $_POST[ 'condate' ] ) ) && (isset( $_POST[ 'mname' ] ) ) ) {
         insertaircraft( $_POST[ 'regnum' ], $_POST[ 'carrier' ], $_POST[ 'condate' ], $_POST[ 'mname' ] );
-        header( 'Location: aircraft.php' );
+        header( 'Location: planes_tabs.php' );
     }
 ?>
 

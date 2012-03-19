@@ -1,3 +1,7 @@
+html, body {
+     font-family: "Trebuchet MS", Verdana;
+ }
+
 div.logo {
     height: 100px;
     width: 100px;
@@ -17,19 +21,13 @@ div.menu {
     top: 88px;
 }
 
+
 div.content {
     position:absolute;
     top: 120px;
-    left: 150px;
+    left: 0px;
     width: 100%;
     padding-top: 20px;
-}
-
-div.rmenu {
-    position:absolute;
-    left: 10px;
-    top: 150px;
-    padding-left: 18px;
 }
 
 th {
@@ -39,8 +37,25 @@ th {
     color:#DCE3F0;
 }
 
+div.tables {
+    position:absolute;
+    top: 50px;
+    left: 0px;
+}
+
+div.tabsmenu {
+    padding-top: 6px;
+    padding-left:5px;
+    padding-bottom: 10px;
+}
 table { 
     border-collapse: collapse; 
+}
+table.listing {
+    position:static;
+    top: 50px;
+    left:10px;
+    margin-bottom: 10px;
 }
 table.listing td{
     padding-right: 10px;
@@ -59,9 +74,19 @@ table.listing tr:nth-child(even) {
     border-style: solid;
 }
 
-table.formz td: {
-    padding-top: 15px;
-    padding-bottom: 15px;
+table.formz {
+    position:absolute;
+    top: 50px;
+    left: 50px;
+}
+
+table.formz td{
+    padding: 5px;
+}
+
+table.formz tr:last-child {
+    background-color:#FFFFFF;
+    margin top:5px;
 }
 
 table.formz tr:nth-child(odd) {
@@ -69,6 +94,8 @@ table.formz tr:nth-child(odd) {
     border-width: 1px;
     border-color:#222222; ;
     border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 table.formz tr:nth-child(even) {
@@ -89,7 +116,4 @@ form.cmxform label.error, label.error {
     height: 20px;
     margin-top: 2px;
     font-size: 10px;
-}
-
-#tabs {
 }

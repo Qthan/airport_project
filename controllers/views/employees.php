@@ -2,7 +2,15 @@
     <a href = 'controllers.php'>view controllers</a>
     <a href = 'technicians.php'>view technicians</a>
     </p>
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
  */?>
+        <script type="text/javascript" src = "js/myscripts.js"></script>
+       
+    <div class="tabsmenu">
+        <a href = 'insert_employee.php'>add employee</a> 
+    </div>
+<div class="listing">
 <table class="listing">
     <tr>
         <th >ssn</th>
@@ -44,3 +52,4 @@ foreach( $employees as $employee ) {
       </tr>
     <?php } ?>
 </table>
+</div>

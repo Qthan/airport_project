@@ -3,6 +3,7 @@
 
 <form class="cmxform" id="aircraftform" action = "submit_aircraft.php" method = "post">
     <table class= "formz">
+    <tbody>
         <tr> 
             <td> Registration Number </td> <td > <input type = "text" id = "regnum" name = "regnum"> </td>
         </tr>
@@ -27,9 +28,17 @@
             </select>
         </td>
         </tr>
-        <tr>
-            <td> <input type = "submit" name = "submit" value = "submit"> </td>
+        </tbody>    
+    <tr>
+            <td> 
+            </td>
+            <td> 
+                <div class="buttons">
+                    <input type = "submit" name = "submit" value = "submit"> 
+                </div>
+            </td>
         </tr>
+    
     </table>
 
 </form> 

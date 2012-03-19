@@ -4,7 +4,7 @@
 
     if ( ( isset( $_POST[ 'delcheckid' ] ))) {
         deletechecks( $_POST[ 'delcheckid' ] );
-        header( 'Location: checks.php' );
+        header( 'Location: checks_tabs.php' );
     }
     
 ?>

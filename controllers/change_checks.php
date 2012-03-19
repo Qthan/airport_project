@@ -6,7 +6,7 @@
         updatechecks( $_POST[ 'checkid' ], 'duration', $_POST[ 'duration' ]);
         updatechecks( $_POST[ 'checkid' ], 'score', $_POST[ 'score' ]);
         updatechecks( $_POST[ 'checkid' ], 'date', $_POST[ 'date' ]);
-        header( 'Location: checks.php' );
+        header( 'Location: checks_tabs.php' );
     }
 ?>
 

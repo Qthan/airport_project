@@ -4,6 +4,6 @@
 
     if ( (isset( $_POST[ 'delregnum' ] ) ) ) {
         deleteaircraft( $_POST[ 'delregnum' ] );
-        header( 'Location: aircraft.php' );
+        header( 'Location: planes_tabs.php' );
     }
 ?>

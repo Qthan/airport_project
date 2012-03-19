@@ -4,6 +4,6 @@
 
     if ( (isset( $_POST[ 'delmodelcode' ] ) ) ) {
         deletemodel( $_POST[ 'delmodelcode' ] );
-        header( 'Location: aircraft_model.php' );
+        header( 'Location: planes_tabs.php' );
     }
 ?>

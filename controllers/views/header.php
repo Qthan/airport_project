@@ -7,39 +7,7 @@
         <link rel="stylesheet" href="css/jquery-ui-1.8.18.custom.css">
 		<script src="js/jquery-1.7.1.min.js"></script>
 		<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				$( "#datepicker" ).datepicker({
-					dateFormat:'yy-mm-dd',
-					changeMonth: true,
-					changeYear: true,
-                    maxDate: "+0w"
-                });
-			});
-        </script>
-        <script>
-            $(document).ready(function() {
-                $( "input:submit, a, button", ".menu" ).button();
-            });
-        </script>
-        <script>
-            $(document).ready(function() {
-                $( "input:submit, a, button", ".buttons" ).button();
-            });
-        </script>
-        <script>
-        $(document).ready(function() {
-            $( "#tabs" ).tabs({
-                ajaxOptions: {
-                    error: function( xhr, status, index, anchor ) {
-                        $( anchor.hash ).html(
-                            "Couldn't load this tab. We'll try to fix this as soon as possible. " +
-                            "If this wouldn't be a demo." );
-                    }  
-                }
-            });
-        });
-        </script>
+        <script type="text/javascript" src = "js/myscripts.js"></script>
         <script type="text/javascript" src="js/usableform.js"></script>
         <script src="js/jquery.validate.js" type="text/javascript"></script>
         <script src="js/custom.js" type="text/javascript"></script>
@@ -52,8 +20,8 @@
                 <table >
                  <tr>
                    <td> <a href="employees_tabs.php" >employess</a> </td>
-                   <td> <a href="aircraft.php" >planes</a> </td>
-                   <td> <a href="checks.php" >checks </a></td>
+                   <td> <a href="planes_tabs.php" >planes</a> </td>
+                   <td> <a href="checks_tabs.php" >checks </a></td>
                  </tr>
                 </table>
         </div>

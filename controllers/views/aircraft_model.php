@@ -1,6 +1,9 @@
 
-<?php include 'header.php';
-?>
+<script type="text/javascript" src = "js/myscripts.js"></script>
+
+<div class="tabsmenu">
+    <a href = 'insert_model.php'>add model</a> 
+</div>
 
 <table class = "listing">
     <tr>
@@ -37,10 +40,3 @@ foreach( $models as $model ) {
     <?php } ?>
 </table>
 
-<p>
-    <a href = 'insert_model.php'>add model</a> 
-</p>
-
-    
-<?php  include 'footer.php';
-?>

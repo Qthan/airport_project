@@ -1,8 +1,10 @@
-<?php include 'header.php';
-?>
-<p>
-    <a href = 'aircraft_model.php'>view models</a>
-</p>
+
+<script type="text/javascript" src = "js/myscripts.js"></script>
+
+<div class="tabsmenu">
+    <a href = 'insert_aircraft.php'>add aircraft</a> 
+</div>
+
 <table class = "listing" >
         <th >Registration Number</th>
         <th >Air Carrier</th>
@@ -42,10 +44,5 @@ foreach( $aircrafts as $aircraft ) {
     <?php } ?>
 </table>
 
-<p>
-    <a href = 'insert_aircraft.php'>add aircraft</a> 
-</p>
 
     
-<?php  include 'footer.php';
-?>
