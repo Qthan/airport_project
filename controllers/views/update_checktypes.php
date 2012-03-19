@@ -1,6 +1,6 @@
 <?php include 'header.php';
 ?>
-<form action = "change_checktypes.php" method = "post">
+<form class="cmxform" id="checktypesform" action = "change_checktypes.php" method = "post">
     <table>
         <tr> 
         <td> Checktype ID </td> <td > <input type = "text" readonly = "readonly" value = " <?php echo $get[ 0 ];?> " name = "checktypeid" > </td>

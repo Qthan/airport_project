@@ -1,6 +1,6 @@
 <?php include 'header.php';
 ?>
-<form action = "submit_checktypes.php" method = "post">
+<form class="cmxform" id="checktypesform" action = "submit_checktypes.php" method = "post">
     <table>
         <tr> 
             <td> Check Name </td> <td > <input type = "text" name = "checkname"> </td>
