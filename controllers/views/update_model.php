@@ -5,7 +5,7 @@
 <form class="cmxform" id="modelform" action = "change_model.php" method = "post">
     <table>
         <tr> 
-        <td> Model Code</td> <td > <input type = "text" readonly = "readonly" value = " <?php echo $get[ 0 ];?> " name = "modelcode" > </td>
+        <td> Model Code</td> <td > <input type = "text" readonly = "readonly" value = " <?php echo $get[ 0 ];?> " name = "modelc" > </td>
         </tr>
         <tr> 
         <td> Model Name </td> <td > <input type = "text" name = "modelname" value = "<?php echo $get [ 1 ]; ?>" id="modelname" > </td>
