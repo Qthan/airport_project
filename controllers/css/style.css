@@ -105,7 +105,14 @@ table.formz tr:nth-child(even) {
     border-style: solid;
 }
 
-
+div.errmsg {
+    position:absolute;
+    top:190px;
+    left:400px;
+    font-style:italic;
+    font-size:80%;
+    color:red;
+}
 form.cmxform label.error, label.error {
     color: red;
     font-style: italic;

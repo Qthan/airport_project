@@ -9,8 +9,8 @@
 <div class="listing">
 <table class = "listing">
     <tr>
-        <th>SSN</th>
-        <th>UMN</th>
+        <th>ssn</th>
+        <th>umn</th>
         <th>Name</th>
         <th>Surrname</th>
         <th>Address</th>

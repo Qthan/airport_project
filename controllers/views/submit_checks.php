@@ -63,6 +63,15 @@
         </tr>
     </table>
 
+<?php
+     if ($error) {
+?>
+<div class = "errmsg">
+<?php
+        echo "*Score must be less than Maxscore";
+    }
+?>
+</div>
 </form> 
 <?php  include 'footer.php';
 ?>
