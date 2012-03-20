@@ -114,8 +114,9 @@ div.errmsg {
     color:red;
 }
 form.cmxform label.error, label.error {
-    color: red;
-    font-style: italic;
+    font-style:italic;
+    font-size:80%;
+    color:red;
 }
 
 .buttons { 
